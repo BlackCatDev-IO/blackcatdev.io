@@ -11,6 +11,7 @@
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/blackcatdev-io.webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/service-item.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- <link href="../css/work-carousel.scss" rel="stylesheet" type="text/scss"> -->
@@ -53,53 +54,94 @@
       </div>
     </div>
   </nav>
+
+  <!-- Hero Section -->
+
   <header>
-    <div data-autoplay="true" data-loop="true" data-wf-ignore="true"
-      class="hero-section background-video">
+    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="hero-section background-video">
       <video autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
         <source src="../videos/portfolio_header_vid_V2.mp4" data-wf-ignore="true">
       </video>
     </div>
   </header>
 
-  <!-- Services Section -->
-
   <main>
-    <section id="services">
-      <h2>Services</h2>
-      <div class="services-wrapper">
-        <div class="services-box border">
-          <h3 class="center-h">Web</h3>
-          <img class="center-h" src="/assets/icons/shopify-logo.png" alt="shopify logo">
-          <ul>
-            <li>Full stack web apps</li>
-            <li>Full stack web apps</li>
-            <li>Full stack web apps</li>
-          </ul>
-        </div>
-        <div class="services-box border">
-          <h3 class="center-h">Shopify</h3>
-          <img class="center-h" src="/assets/icons/shopify-logo.png" alt="shopify logo">
-          <div class="service-box-header">
-          </div>
-          <ul>
-            <li>Store Setup</li>
-            <li>Store Migration</li>
-            <li>Theme Customization</li>
-          </ul>
-        </div>
-        <div class="services-box border">
-          <h3 class="center-h">Mobile Apps</h3>
-          <img class="center-h" src="/assets/icons/shopify-logo.png" alt="shopify logo">
 
-          <ul>
-            <li>Store Setup</li>
-            <li>Store Migration</li>
-            <li>Theme Customization</li>
-          </ul>
+    <!-- Services Section -->
+
+    <section id="services">
+      <div class="service-section-container">
+        <div class="service-section-container-inner">
+
+          <!-- Web Service -->
+
+          <div class="service-item-wrapper">
+            <h3 class="service-title hide-on-hover">Web</h3>
+            <div class="show-on-hover fade-in">
+              <h3 class="show-service-text">Web</h3>
+              <div class="service-description">
+                <p>Custom websites built and designed to fit your needs</p>
+              </div>
+            </div>
+            <div class="service-image">
+              <picture>
+                <source media="(min-width:0px)" srcset="../assets/images/web-dev-pic.png" type="image/webp">
+                <source media="(min-width:0px)"
+                  srcset="https://www.loungelizard.com/wp-content/uploads/hp-marketing-tile.jpg">
+                <img src="/wp-content/uploads/hp-marketing-tile.jpg" alt="Hp marketing tile" loading="eager" width="535"
+                  height="585">
+              </picture>
+            </div>
+          </div>
+
+          <!-- E-Commerce Service -->
+
+          <div class="service-item-wrapper">
+            <h3 class="service-title hide-on-hover">E-Commerce</h3>
+            <div class="show-on-hover fade-in">
+              <h3 class="show-service-text">E-Commerce</h3>
+              <div class="service-description">
+                <p>Full store setup - Store Migrations - Theme Customization
+                </p>
+              </div>
+            </div>
+            <div class="service-image">
+              <picture>
+                <source media="(min-width:0px)" srcset="../assets/images/shop1-cropped.png" type="image/webp">
+                <source media="(min-width:0px)"
+                  srcset="https://www.loungelizard.com/wp-content/uploads/hp-marketing-tile.jpg">
+                <img src="/wp-content/uploads/hp-marketing-tile.jpg" alt="Hp marketing tile" loading="eager" width="535"
+                  height="585">
+              </picture>
+            </div>
+          </div>
+
+          <!-- Mobile Apps Service -->
+
+          <div class="service-item-wrapper">
+            <h3 class="service-title hide-on-hover">Mobile Apps</h3>
+            <div class="show-on-hover fade-in">
+              <h3 class="show-service-text">Mobile Apps</h3>
+              <div class="service-description">
+                <p>Get your business and your ideas right into peoples hands. Custom built mobile apps from your ideas
+                  to full deployment on iOS App Store and Android Play Store
+                </p>
+              </div>
+            </div>
+            <div class="service-image">
+              <picture>
+                <source media="(min-width:0px)" srcset="../assets/images/mobile1.png" type="image/webp">
+                <source media="(min-width:0px)"
+                  srcset="https://www.loungelizard.com/wp-content/uploads/hp-marketing-tile.jpg">
+                <img src="/wp-content/uploads/hp-marketing-tile.jpg" alt="Hp marketing tile" loading="eager" width="535"
+                  height="585">
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
 
     <!-- Work Section -->
 
