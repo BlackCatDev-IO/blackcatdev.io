@@ -113,130 +113,7 @@
   box-shadow: 0px 0px 3px 1px #3898ec;
 }
 
-body {
-  background-color: #0c0e0f;
-  /* background-color: #0c0c0c; */
-  font-family: Opensauceone, sans-serif;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.8;
-}
 
-h1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 80px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 56px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 40px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-h4 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-h5 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: Syne, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-p {
-  margin-bottom: 32px;
-  font-size: 16px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-ul {
-  margin-top: 0px;
-  margin-bottom: 32px;
-  padding-left: 0px;
-  font-size: 1rem;
-}
-
-ol {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  padding-left: 40px;
-}
-
-li {
-  margin-top: -1px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
-}
-
-strong {
-  font-weight: bold;
-}
-
-blockquote {
-  margin-bottom: 32px;
-  padding: 0px;
-  border-left: 5px none #e2e2e2;
-  font-size: 32px;
-  line-height: 1.4;
-  font-weight: 300;
-}
-
-figure {
-  margin-bottom: 10px;
-}
-
-figcaption {
-  margin-top: 5px;
-  text-align: center;
-}
 
 .section.pre-footer-section {
   padding-top: 140px;
@@ -980,36 +857,7 @@ figcaption {
   padding-left: 60px;
 }
 
-.nav {
-  position: fixed;
-  left: 0%;
-  top: 60px;
-  right: 0%;
-  bottom: auto;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
 
-.container-large {
-  width: 100%;
-  max-width: 1920px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 60px;
-  padding-left: 60px;
-}
 
 .nav-logo {
   position: relative;
@@ -1068,32 +916,6 @@ figcaption {
   -ms-flex-align: start;
   align-items: flex-start;
   cursor: pointer;
-}
-
-.nav-link {
-  padding: 0px 16px;
-  -webkit-transition: color 600ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: color 600ms cubic-bezier(0.23, 1, 0.32, 1);
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.nav-link:hover {
-  color: #9a9a9a;
-}
-
-.nav-menu-bar {
-  width: 32px;
-  height: 1px;
-  background-color: #fff;
-}
-
-.nav-menu-bar._1 {
-  width: 24px;
-}
-
-.nav-menu-bar._2 {
-  width: 16px;
 }
 
 .home-hero-bottom {
@@ -6699,42 +6521,42 @@ figcaption {
 
 @font-face {
   font-family: "Opensauceone";
-  src: url("../fonts/OpenSauceOne-Bold.woff2") format("woff2");
+  src: url("../../fonts/OpenSauceOne-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Opensauceone";
-  src: url("../fonts/OpenSauceOne-Light.woff2") format("woff2");
+  src: url("../../fonts/OpenSauceOne-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Opensauceone";
-  src: url("../fonts/OpenSauceOne-Regular.woff2") format("woff2");
+  src: url("../../fonts/OpenSauceOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Syne";
-  src: url("../fonts/Syne-Bold.woff2") format("woff2");
+  src: url("../../fonts/Syne-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Opensauceone";
-  src: url("../fonts/OpenSauceOne-Medium.woff2") format("woff2");
+  src: url("../../fonts/OpenSauceOne-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Opensauceone";
-  src: url("../fonts/OpenSauceOne-Italic.woff2") format("woff2");
+  src: url("../../fonts/OpenSauceOne-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;

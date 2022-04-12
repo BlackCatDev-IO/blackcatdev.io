@@ -1,0 +1,13 @@
+ 
+
+.project-item:hover {
+  /* transform: scale(1.06); */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+@media (min-width: 768px) {
+  .project-item {
+    width: calc(50% - 10px);
+    height: 600px;
+  }
+}
