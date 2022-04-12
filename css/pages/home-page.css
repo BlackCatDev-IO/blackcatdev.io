@@ -232,7 +232,7 @@ span:nth-child(18) {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 750px;
+  min-height: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
   -webkit-box-pack: center;
@@ -453,8 +453,8 @@ span:nth-child(18) {
   position: relative;
   background-image: linear-gradient(315deg, #5d5b5b 0%, #ffffff 74%);
   padding: 0 3rem;
- /* clip-path: polygon(100% 2%, 100% 92%, 0 100%, 0 11%); */
- /* transform: skewY(-3deg); */
+  /* clip-path: polygon(100% 2%, 100% 92%, 0 100%, 0 11%); */
+  /* transform: skewY(-3deg); */
 }
 
 .about-content-wrapper {
@@ -563,10 +563,12 @@ span:nth-child(18) {
 
 .contact-form-block div,
 .contact-form-block input,
+.contact-form-block textarea,
 .contact-form-block label {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: white;
 }
 
 .parent-component p,
@@ -629,12 +631,18 @@ span {
 .contact-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   height: 375px;
 }
 
 .contact-text-wrapper a {
   font-size: 1.2rem;
+}
+.contact-text-wrapper h3 {
+  margin-bottom: 3rem;
+}
+.contact-text-wrapper a {
+  margin-top: 10rem;
 }
 
 .form-wrap {
@@ -717,6 +725,7 @@ span {
   border: none;
   border-bottom: 1px solid #505050;
   padding-bottom: 1rem;
+  color: white;
   /* 
   text-indent: 10px;
    border-bottom: 2px solid rgba(49, 49, 49, 0.6); 
@@ -777,4 +786,61 @@ span {
 #contact-submit-button:hover {
   background-color: #4b28d8;
   transition: 0.25s ease all;
+}
+
+@media screen and (max-width: 700px) {
+  .fade-in-text {
+    font-size: 4rem;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 375px;
+  }
+
+  .contact-text-wrapper h3 {
+    margin: 0;
+  }
+
+  .contact-text-wrapper a {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fade-in-text {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  .fade-in-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+
+.fade-in-text {
+  font-size: 2.5rem;
+}
+
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .background-video {
+    height: 200px;
+  }
+  
 }
