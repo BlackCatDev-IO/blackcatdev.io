@@ -58,10 +58,6 @@ li {
   object-fit: cover;
 }
 
-#header-text {
-  z-index: 1000;
-}
-
 #header-text span {
   display: inline-block;
   opacity: 0;
@@ -173,7 +169,7 @@ li {
   font-weight: 500;
 }
 
-.mobile-nav {
+.mobile-only {
   display: none;
 }
 
@@ -226,6 +222,10 @@ li {
 /* -------------------------------------------------------------------------- */
 /*                             Hero Section Header                            */
 /* -------------------------------------------------------------------------- */
+
+.shadow-wrap {
+  filter: drop-shadow(-1px 6px 6px rgba(16, 17, 17, 0.552));
+}
 
 .background-video {
   display: flex;
@@ -637,17 +637,6 @@ span {
 #contact-submit-button:hover {
   background-color: var(--button-color);
   transition: 0.25s ease all;
-}
-
-.visuallyHidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
 }
 
 .container {

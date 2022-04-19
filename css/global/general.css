@@ -76,13 +76,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
-/* 
+
 ul {
-  margin-top: 0px;
-  margin-bottom: 32px;
-  padding-left: 0px;
-  font-size: 1rem;
-} */
+  margin: 0;
+  padding: 0;
+}
 
 ol {
   margin-top: 0px;
