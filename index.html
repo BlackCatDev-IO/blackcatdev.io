@@ -7,32 +7,20 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="../css/global/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../css/global/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../css/global/blackcatdev-io.webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/global/general.css" rel="stylesheet" type="text/css">
   <link href="../css/pages/home-page.css" rel="stylesheet" type="text/css">
   <link href="../css/components/service-item.css" rel="stylesheet" type="text/css">
   <link href="../css/components/project-item.css" rel="stylesheet" type="text/css">
-  <link href="../css/components/carousel.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito:wght@200;300;400;500&family=Sen&family=Space+Grotesk:wght@300;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="../js/carousel.js"></script>
 
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <!-- <script type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
-  </script> -->
 
-  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../images/webclip.png" rel="apple-touch-icon">
+
   <style>
     * {
       -webkit-font-smoothing: antialiased;
@@ -43,52 +31,66 @@
 </head>
 <body>
 
-  <!-- <div class="grain"></div> -->
-
-  <!-- Desktop Nav -->
-
-  <nav id="nav-bar" class="desktop">
-    <div class="container-large">
-      <div class="nav-wrap">
-        <a href="#hero-section" class="nav-logo">blackcatdev.io</a>
-        <div class="nav-menu">
-          <div class="nav-menu-links-wrap">
-            <a href="#services" class="nav-link ">Services</a>
-            <a href="#projects" class="nav-link ">Projects</a>
-            <a href="#about" class="nav-link ">About</a>
-            <a href="#contact" class="nav-link ">Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Nav Menu -->
-
-  <nav class="mobile-nav" role="navigation">
-    <a href="#hero-section" class="nav-logo">blackcatdev.io</a>
-    <div id="menu-toggle">
-      <input id="toggle" type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <ul id="mobile-menu">
-        <li class="fade-in-text "><a href="#services" class="nav-link close-menu fade-in-text ">Services</a></li>
-        <li><a href="#projects" class="nav-link close-menu">Projects</a></li>
-        <li><a href="#about" class="nav-link close-menu">About</a></li>
-        <li><a href="#contact" class="nav-link close-menu">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
   <!-- Hero Section -->
 
-  <header>
-    <div id="hero-section" class="hero-section background-video black-gradient">
-      <video autoplay="true" loop="true" muted="" playsinline="">
-        <source src="../assets/videos/header-video.mp4" type="video/mp4">
+  <span class="shadow-wrap">
+    <header id="home-header">
 
-      </video>
+      <!-- Desktop Nav -->
+
+      <nav class="desktop">
+        <div class="nav-wrap">
+          <a href="#hero-section" class="nav-logo ">blackcatdev.io</a>
+          <ul class="nav-menu fade-underline">
+            <li><a href="#services" class="nav-link ">Services</a></li>
+            <li><a href="#projects" class="nav-link ">Projects</a></li>
+            <li><a href="#about" class="nav-link ">About</a></li>
+            <li>
+              <a href="#contact" class="nav-link ">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav Menu -->
+
+      <nav class="mobile-nav" role="navigation">
+        <a href="#hero-section" class="nav-logo">blackcatdev.io</a>
+
+        <!-- <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+          <label for="checkbox1">
+            <div class="hamburger hamburger1">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label> -->
+
+        <div id="menu-toggle">
+          <input id="toggle" type="checkbox" />
+
+          <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+          <label for="checkbox1">
+            <div class="hamburger hamburger1">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+
+          <!-- <span></span>
+            <span></span>
+            <span></span> -->
+          <ul id="mobile-menu">
+            <li><a href="#services" class="nav-link close-menu fade-in-text ">Services</a></li>
+            <li><a href="#projects" class="nav-link close-menu">Projects</a></li>
+            <li><a href="#about" class="nav-link close-menu">About</a></li>
+            <li><a href="#contact" class="nav-link close-menu">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <h1 id="header-text" class="fade-in-text">
         <span>b</span>
         <span>l</span>
@@ -105,12 +107,59 @@
         <span>i</span>
         <span>o</span>
       </h1>
-    </div>
-  </header>
-
+    </header>
+  </span>
   <main>
 
     <!-- Services Section -->
+
+    <section id="services">
+
+      <!-- Web Service -->
+
+      <div class="service-item-wrapper2">
+        <img data-aos="fade-right" src="../assets/images/web.jpg" alt="Web Development Image" loading="eager">
+        <div class="service-item-text">
+          <h3 class="service-title2" data-aos="fade-up">Web Development</h3>
+          <h4 data-aos="fade-up">Beautiful, responsive websites</h4>
+          <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna
+            aliqua. Amet porttitor eget dolor morbi non arcu.</p>
+        </div>
+      </div>
+
+      <!-- Shopify Service -->
+
+      <div class="service-item-wrapper2">
+        <div class="service-item-text">
+          <h3 class="service-title2" data-aos="fade-up">E-Commerce</h3>
+          <h4 data-aos="fade-up">Beautiful, responsive websites</h4>
+          <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna
+            aliqua. Amet porttitor eget dolor morbi non arcu.</p>
+        </div>
+        <img data-aos="fade-left" src="../assets/images/shopify.jpg" alt="E-commerce Image" loading="eager">
+      </div>
+
+      <!-- Mobile Service -->
+
+      <div class="service-item-wrapper2">
+        <img data-aos="fade-right" src="../assets/images/mobile-app.jpg" alt="Mobile App Image" loading="eager">
+        <div class="service-item-text">
+          <h3 class="service-title2" data-aos="fade-up">Mobile</h3>
+          <h4 data-aos="fade-up">Beautiful, responsive websites</h4>
+          <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna
+            aliqua. Amet porttitor eget dolor morbi non arcu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects"> </section>
+
 
     <section id="services">
       <h2 data-aos="fade-in">Services</h2>
@@ -137,7 +186,6 @@
           </div>
 
           <!-- E-Commerce Service -->
-
           <div class="service-item-wrapper" data-aos="flip-down">
             <h3 class="service-title hide-on-hover">E-Commerce</h3>
             <div class="show-on-hover fade-in">
@@ -170,7 +218,8 @@
             <div class="service-image">
               <picture>
                 <source media="(min-width:0px)" srcset="../assets/images/mobile-app.jpg" type="image/webp">
-                <img src="../assets/images/shopify.jpg" alt="Mobile app image" loading="eager" width="535" height="585">
+                <img src="../assets/images/mobile-app.jpg" alt="Mobile app image" loading="eager" width="535"
+                  height="585">
               </picture>
             </div>
           </div>
@@ -180,15 +229,14 @@
 
     <!-- Work Section -->
 
-    <section id="projects">
+    <section>
       <h2 data-aos="fade-in">Projects</h2>
+      <div class="service-section-container">
+        <div class="service-section-container-inner">
 
-      <!-- <div class="service-section-container"> -->
-      <!-- <div class="service-section-container-inner"> -->
+          <!-- Two Clothes -->
 
-      <!-- Two Clothes -->
-
-      <!-- <div class="service-item-wrapper project-item">
+          <div class="service-item-wrapper project-item">
             <div class="show-on-hover fade-in">
               <div class="service-description">
                 <p>Custom websites built and designed to fit your needs</p>
@@ -222,62 +270,31 @@
               </picture>
             </div>
           </div>
-        </div> -->
-      <!-- <div class="work-3-project-item border">
-        <img src="/assets/images/rotated-fashion.png" loading="lazy" alt="" class="project-image">
-        <div class="work-3-project-wrap">
-          <div class="work-item-column">
-            <h2 class="margin-16">Two-Clothes</h2>
-            <div class="text-size-xsmall text-color-primary-2">Clothing Retail Store</div>
-          </div>
-          <h2>→</h2>
         </div>
-        <a href="/project/theblog"></a>
-      </div>
-      <div class="work-3-project-item border">
-        <img src="/assets/images/galaxy-store.png" loading="lazy" alt="" class="project-image">
-        <div class="work-3-project-wrap">
-          <div class="work-item-column">
-            <h2 class="margin-16">Galaxy Box</h2>
-            <div class="text-size-xsmall text-color-primary-2">Galaxy Box Store</div>
+        <div class="work-3-project-item border">
+          <img src="/assets/images/rotated-fashion.png" loading="lazy" alt="" class="project-image">
+          <div class="work-3-project-wrap">
+            <div class="work-item-column">
+              <h2 class="margin-16">Two-Clothes</h2>
+              <div class="text-size-xsmall text-color-primary-2">Clothing Retail Store</div>
+            </div>
+            <h2>→</h2>
           </div>
-          <h2>→</h2>
+          <a href="/project/theblog"></a>
         </div>
-        <a href="/project/theblog"></a>
-      </div> -->
-
-      <div class="background-video black-gradient">
-        <video autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-          <!-- <source src="/assets/videos/test4-5000-kbs.mov" type="video/mp4"> -->
-          <source src="/assets/videos/BG02.mov" type="video/mp4">
-        </video>
-        <!-- Slideshow container -->
-        <div class="slideshow-container" data-aos="zoom-in">
-
-          <!-- Full-width images with number and caption text -->
-          <div id="slide1" class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <img src="assets/images/test7.jpg" style="width:100%">
-            <div class="text">Fashion Retail Store</div>
+        <div class="work-3-project-item border">
+          <img src="/assets/images/galaxy-store.png" loading="lazy" alt="" class="project-image">
+          <div class="work-3-project-wrap">
+            <div class="work-item-column">
+              <h2 class="margin-16">Galaxy Box</h2>
+              <div class="text-size-xsmall text-color-primary-2">Galaxy Box Store</div>
+            </div>
+            <h2>→</h2>
           </div>
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-            <img src="assets/images/test9.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
+          <a href="/project/theblog"></a>
         </div>
       </div>
+
 
       <!-- About Section -->
 
@@ -382,8 +399,8 @@
     <section id="contact">
       <h2 data-aos="fade-in">Contact</h2>
       <div class="contact-wrapper background-video black-gradient" data-aos="fade-in">
-        <video autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-          <source src="/assets/videos/BG05.mov" type="video/mp4">
+        <video autoplay loop muted>
+          <!-- <source src="/assets/videos/BG05.mov" type="video/mp4"> -->
         </video>
         <div class="contact-text-wrapper">
           <h3>Have a project? </h3>
@@ -448,22 +465,25 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1500,
-
+      duration: 700,
     });
   </script>
   <script>
-    const mobileLinks = document.getElementsByClassName("close-menu");
 
-    mobileLinks[0].addEventListener("click", closeMobileMenu);
+    addMobileMenuListeners();
 
-    for (const link of mobileLinks) {
-      link.addEventListener("click", closeMobileMenu);
+    function addMobileMenuListeners() {
+      const mobileLinks = document.getElementsByClassName("close-menu");
+      mobileLinks[0].addEventListener("click", closeMobileMenu);
+
+      for (const link of mobileLinks) {
+        link.addEventListener("click", closeMobileMenu);
+      }
     }
 
     function closeMobileMenu() {
-      let test = document.getElementById("checkbox1");
-      test.checked = false;
+      let mobileMenuToggle = document.getElementById("checkbox1");
+      mobileMenuToggle.checked = false;
     }
   </script>
 </body>

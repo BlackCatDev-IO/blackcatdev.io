@@ -1,11 +1,71 @@
+:root {
+  --service-description-text: #7d7777;
+}
+
 .service-item-wrapper {
   height: 240px;
   width: 100%;
   position: relative;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                              NEW SERVICE ITEM                              */
+/* -------------------------------------------------------------------------- */
+
+.service-item-wrapper2 {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  transition-duration: 0.3s;
+}
+
+.service-item-wrapper2:hover {
+  scale: 1.05;
+}
+
+.service-item-wrapper2 img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 7px 7px 10px rgb(51, 49, 49);
+}
+
+.service-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  max-width: 600px;
+  font-family: "Nunito", sans-serif;
+  margin-left: 3rem;
+}
+
+.service-item-text h3 {
+  color: blue;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgb(13, 13, 13);
+}
+.service-item-text h4 {
+  color: var(--service-description-text);
+  /* margin: 1.5rem 0; */
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+.service-item-text p {
+  color: black;
+}
+
+.shadow-wrap {
+  filter: drop-shadow(-1px 6px 6px rgba(16, 17, 17, 0.552));
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              NEW SERVICE ITEM                              */
+/* -------------------------------------------------------------------------- */
+
 .service-item-wrapper:hover {
-  /* transform: scale(1.06); */
   transition: all 0.3s ease-in-out;
 }
 
