@@ -49,7 +49,6 @@
 }
 .service-item-text h4 {
   color: var(--service-description-text);
-  /* margin: 1.5rem 0; */
   margin-top: 1.5rem;
   font-weight: 500;
 }
@@ -229,5 +228,34 @@
 
   .service-description {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-service-item-wrapper {
+    flex-direction: column;
+  }
+
+  .mobile-service-header-text {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .mobile-service-header-text h3 {
+    color: blue;
+    font-weight: 400;
+    margin-top: 3rem;
+  }
+  .mobile-service-header-text h4 {
+    color: var(--service-description-text);
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+
+  .mobile-service-item-wrapper p {
+    color: black;
+    font-weight: 400;
+    margin: 2rem 1rem;
+    font-family: "Nunito", sans-serif;
   }
 }

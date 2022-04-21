@@ -375,10 +375,6 @@ li {
   display: flex;
 }
 
-#services {
-  font-family: Syne, sans-serif;
-}
-
 .services-wrapper {
   flex-direction: column;
   align-items: center;
