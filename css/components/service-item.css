@@ -13,12 +13,13 @@
 /* -------------------------------------------------------------------------- */
 
 .service-item-wrapper2 {
-  height: 500px;
+  height: 60vh;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-around;
   transition-duration: 0.3s;
+  margin-bottom: 3rem;
 }
 
 .service-item-wrapper2:hover {

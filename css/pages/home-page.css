@@ -1,10 +1,12 @@
 :root {
-  --main-bg-color: #0b101a;
+  /* --main-bg-color: #0b101a; */
+  --main-bg-color: #16202a;
   --button-color: #4b28d8;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--main-bg-color);
 }
 
 section {
@@ -40,8 +42,8 @@ li {
   justify-content: flex-start;
   align-items: center;
   background: url("/assets/images/header1.jpg");
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-  height: 1500px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  height: 140vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +51,7 @@ li {
 
 #home-header h1 {
   margin: auto;
-  padding-bottom: 200px;
+  padding-bottom: 42vh;
 }
 
 #home-header img {
@@ -272,11 +274,9 @@ li {
 /* -------------------------------------------------------------------------- */
 
 #services {
-  margin-top: -250px;
-  /* margin-bottom: -250px; */
-
+  margin-top: -13vh;
   background: #e4e1ed;
-  padding: 5rem 2rem;
+  padding: 0 2rem;
 }
 
 /* -------------------------------------------------------------------------- */
