@@ -234,7 +234,9 @@
   }
 }
 
-@media (max-width: 500px) {
+ 
+
+@media (max-width: 700px) {
   .mobile-service-item-wrapper {
     flex-direction: column;
   }
