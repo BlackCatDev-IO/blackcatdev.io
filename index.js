@@ -24,21 +24,25 @@ function initSmoothScrolling() {
   const sectionLinks = [
     "hero-section",
     "services",
+    "services",
     "projects",
     "about",
     "contact",
   ];
 
   sectionLinks.forEach((section) => {
-    const link = document.querySelectorAll(`[href='#${section}']`)[0];
-    const navSection = document.getElementById(section);
+    const linkList = document.querySelectorAll(`[href='#${section}']`);
 
-    const scrollSettings = {
-      toElement: navSection,
-      duration: 1000,
-      easing: "swing",
-    };
+    linkList.forEach((link) => {
+      const navSection = document.getElementById(section);
 
-    link.addEventListener("click", (e) => smoothScroll(scrollSettings));
+      const scrollSettings = {
+        toElement: navSection,
+        duration: 1000,
+        easing: "swing",
+      };
+
+      link.addEventListener("click", (e) => smoothScroll(scrollSettings));
+    });
   });
 }
