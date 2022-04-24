@@ -401,51 +401,11 @@
   <footer>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-    });
-  </script>
+
   <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
     integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
     crossorigin="anonymous"></script>
-  <script>
-    addMobileMenuListeners();
-    initSmoothScrolling();
-
-    function addMobileMenuListeners() {
-      const mobileLinks = document.getElementsByClassName("close-menu");
-      mobileLinks[0].addEventListener("click", closeMobileMenu);
-
-      for (const link of mobileLinks) {
-        link.addEventListener("click", closeMobileMenu);
-      }
-    }
-
-    function closeMobileMenu() {
-      let mobileMenuToggle = document.getElementById("menu-button");
-      mobileMenuToggle.checked = false;
-    }
-
-    function initSmoothScrolling() {
-      const sectionLinks = ["hero-section", "services", "projects", "about", "contact"];
-
-      sectionLinks.forEach(section => {
-        const link = document.querySelectorAll(`[href='#${section}']`)[0];
-        const navSection = document.getElementById(section);
-
-        const scrollSettings = {
-          toElement: navSection,
-          duration: 1000, 
-          easing: "swing"
-        };
-
-        link.addEventListener("click", (e) =>
-          smoothScroll(scrollSettings)
-        );
-      });
-    }
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
 
