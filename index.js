@@ -38,7 +38,7 @@ function initSmoothScrolling() {
 
       const scrollSettings = {
         toElement: navSection,
-        duration: 1000,
+        duration: 1500,
         easing: "swing",
       };
 

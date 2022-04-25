@@ -5,7 +5,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   background: var(--main-bg-color);
 }
 
@@ -19,8 +18,6 @@ section h2 {
 }
 
 h1 {
-  max-width: 40ch;
-  text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   animation-iteration-count: infinite;
@@ -41,7 +38,7 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url("/assets/images/header1.jpg");
+  background: url("/assets/images/header2.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   height: 140vh;
   background-position: center;
@@ -51,8 +48,11 @@ li {
 }
 
 #home-header h1 {
-  margin: auto;
-  padding-bottom: 42vh;
+  margin-top: 40vh;
+  padding: 0 2rem 0.5rem 2rem;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 5px;
 }
 
 #home-header img {
