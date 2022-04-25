@@ -10,6 +10,7 @@
   <link href="../css/pages/home-page.css" rel="stylesheet" type="text/css">
   <link href="../css/pages/home-page-media-queries.css" rel="stylesheet" type="text/css">
   <link href="../css/components/service-item.css" rel="stylesheet" type="text/css">
+  <link href="../css/components/project-item.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -104,7 +105,7 @@
 
       <!-- Web Service -->
       <div class="desktop-only">
-        <div class="service-item-wrapper2 desktop-only">
+        <div class="service-item-container desktop-only">
           <img data-aos="fade-right" src="../assets/images/web.jpg" alt="Web Development Image" loading="eager">
           <div class="service-item-text">
             <h3 class="service-title2" data-aos="fade-up">Web Development</h3>
@@ -118,7 +119,7 @@
 
         <!-- Shopify Service -->
 
-        <div class="service-item-wrapper2">
+        <div class="service-item-container">
           <div class="service-item-text">
             <h3 class="service-title2" data-aos="fade-up">E-Commerce</h3>
             <h4 data-aos="fade-up">Setup - Migrations - Customization</h4>
@@ -132,7 +133,7 @@
 
         <!-- Mobile Service -->
 
-        <div class="service-item-wrapper2">
+        <div class="service-item-container">
           <img data-aos="fade-right" src="../assets/images/mobile.jpg" alt="Mobile App Image" loading="eager">
           <div class="service-item-text">
             <h3 class="service-title2" data-aos="fade-up">Mobile</h3>
@@ -142,7 +143,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Services Section-Mobile -->
 
@@ -186,137 +186,36 @@
           your ideas
           to full deployment on iOS App Store and Android Play Store.</p>
       </div>
-
-      <!-- <section id="projects"> </section> -->
-
-      <!-- <section id="services"> -->
-      <div class="service-section-container">
-        <div class="service-section-container-inner">
-
-          <!-- Web Service -->
-
-          <!-- <div class="service-item-wrapper" data-aos="flip-up">
-            <h3 class="service-title hide-on-hover">Web</h3>
-            <div class="show-on-hover fade-in">
-              <div class="service-description">
-                <p>Custom websites built and designed to fit your needs</p>
-              </div>
-            </div>
-            <div class="service-image">
-              <picture>
-                <source media="(min-width:0px)" srcset="../assets/images/web.jpg" type="image/webp">
-
-                <img src="../assets/images/shopify.jpg" alt="Web Development Image" loading="eager" width="535"
-                  height="585">
-              </picture>
-            </div>
-          </div> -->
-
-          <!-- E-Commerce Service -->
-          <!-- <div class="service-item-wrapper" data-aos="flip-down">
-            <h3 class="service-title hide-on-hover">E-Commerce</h3>
-            <div class="show-on-hover fade-in">
-              <div class="service-description">
-                <p>Full store setup - Store Migrations - Theme Customization
-                </p>
-              </div>
-            </div>
-            <div class="service-image">
-              <picture>
-                <source media="(min-width:0px)" srcset="../assets/images/shopify.jpg" type="image/webp">
-
-                <img src="../assets/images/shopify.jpg" alt="Shopify / E-commerce image" loading="eager" width="535"
-                  height="585">
-              </picture>
-            </div>
-          </div> -->
-
-          <!-- Mobile Apps Service -->
-
-          <!-- <div class="service-item-wrapper" data-aos="flip-up">
-            <h3 class="service-title hide-on-hover">Mobile Apps</h3>
-            <div class="show-on-hover fade-in">
-              <div class="service-description">
-                <p>Get your business and your ideas right into peoples hands. Custom built mobile apps from your ideas
-                  to full deployment on iOS App Store and Android Play Store
-                </p>
-              </div>
-            </div>
-            <div class="service-image">
-              <picture>
-                <source media="(min-width:0px)" srcset="../assets/images/mobile-app.jpg" type="image/webp">
-                <img src="../assets/images/mobile-app.jpg" alt="Mobile app image" loading="eager" width="535"
-                  height="585">
-              </picture>
-            </div>
-          </div> -->
-        </div>
-      </div>
     </section>
 
-    <!-- </section> -->
-
-    <!-- Work Section -->
+    <!-- Projects Section -->
 
     <section id="projects">
-      <h2 data-aos="fade-in">Projects</h2>
-      <div class="service-section-container">
-        <div class="service-section-container-inner">
-
-          <!-- Two Clothes -->
-
-          <div class="service-item-wrapper project-item">
-            <div class="show-on-hover fade-in">
-              <div class="service-description">
-                <p>Custom websites built and designed to fit your needs</p>
-              </div>
-            </div>
-            <div class="service-image">
-              <picture>
-                <source media="(min-width:0px)" srcset="../assets/images/fashion2.png" type="image/webp">
-
-                <img src="..assets/images/two-clothes.png" alt="Shopify fashion store image" loading="eager" width="535"
-                  height="585">
-              </picture>
-            </div>
+      <div class="project-container">
+        <a href="" class="project">
+          <picture>
+            <source media="(min-width:0px)" srcset="../assets/images/fashion2.png" type="image/webp">
+            <img src="..assets/images/fashion2.png" alt="Shopify fashion store image" loading="eager">
+          </picture>
+          <div class="project-text">
+            <h3>Two Clothes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Felis donec et odio pellentesque.</p>
           </div>
-
-          <div class="service-item-wrapper project-item">
-            <div class="show-on-hover fade-in">
-              <div class="service-description">
-                <p>Full store setup - Store Migrations - Theme Customization</p>
-              </div>
-            </div>
-            <div class="service-image">
-              <picture>
-                <source media="(min-width:0px)" srcset="../assets/images/shopify.jpg" type="image/webp">
-                <img src="/wp-content/uploads/hp-marketing-tile.jpg" alt="Hp marketing tile" loading="eager" width="535"
-                  height="585">
-              </picture>
-            </div>
+        </a>
+        <a href="" class="project">
+          <picture>
+            <source media="(min-width:0px)" srcset="../assets/images/galaxy-store.png" type="image/webp">
+            <img src="..assets/images/galaxy-store.png" alt="Shopify fashion store image" loading="eager">
+          </picture>
+          <div class="project-text">
+            <h3>Two Clothes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Felis donec et odio pellentesque.</p>
           </div>
-        </div>
-        <div class="work-3-project-item border">
-          <img src="/assets/images/rotated-fashion.png" loading="lazy" alt="" class="project-image">
-          <div class="work-3-project-wrap">
-            <div class="work-item-column">
-              <h2 class="margin-16">Two-Clothes</h2>
-              <div class="text-size-xsmall text-color-primary-2">Clothing Retail Store</div>
-            </div>
-            <h2>→</h2>
-          </div>
-          <a href="/project/theblog"></a>
-        </div>
-        <div class="work-3-project-item border">
-          <img src="/assets/images/galaxy-store.png" loading="lazy" alt="" class="project-image">
-          <div class="work-3-project-wrap">
-            <div class="work-item-column">
-              <h2 class="margin-16">Galaxy Box</h2>
-              <div class="text-size-xsmall text-color-primary-2">Galaxy Box Store</div>
-            </div>
-            <h2>→</h2>
-          </div>
-        </div>
+        </a>
       </div>
     </section>
 
