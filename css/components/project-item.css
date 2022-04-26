@@ -7,6 +7,12 @@
   margin: 6rem 0 6rem 0;
 }
 
+.project-container h2 {
+  text-align: left;
+  color: rgba(146, 146, 146, 0.2);
+  margin-top: 6rem;
+}
+
 .project {
   display: flex;
   justify-content: space-around;
@@ -23,23 +29,35 @@
 .project img {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 40vw;
-  overflow: hidden;
+  width: 90%;
+
   transition: transform 1.5s ease;
   max-height: 500px;
+  object-fit: cover;
 }
 
 .project-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  max-width: 400px;
+  align-items: left;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50%;
+  margin-left: 4rem;
+}
+
+.project-text h4 {
+  color: rgb(225, 64, 64);
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-text h5 {
+  color: rgb(165, 156, 156);
 }
 
 .project:hover img {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .project:hover {

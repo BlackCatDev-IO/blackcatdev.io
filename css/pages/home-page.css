@@ -23,14 +23,14 @@ h1 {
   animation-iteration-count: infinite;
 }
 
-a {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
-}
-
 li {
   list-style-type: none;
   color: black;
+}
+
+nav a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 #home-header {
@@ -381,7 +381,6 @@ li {
   flex-direction: column;
   align-items: center;
   background: url("/assets/images/header1.jpg");
-  font-family: "Nunito", sans-serif;
   /* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); */
   background-position: center;
   background-repeat: no-repeat;

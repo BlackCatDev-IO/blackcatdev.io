@@ -36,14 +36,13 @@
   justify-content: center;
   width: 45%;
   max-width: 600px;
-  font-family: "Nunito", sans-serif;
   margin-left: 3rem;
 }
 
 .service-item-text h3 {
   color: blue;
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgb(13, 13, 13);
+  text-shadow: 1px 1px 2px rgb(13, 13, 13);
 }
 .service-item-text h4 {
   color: var(--service-description-text);
