@@ -1,5 +1,5 @@
 :root {
-  --service-description-text: #7d7777;
+  --service-description-text: #a58f8f;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -40,7 +40,7 @@
 }
 
 .service-item-text h3 {
-  color: blue;
+  color: rgb(255, 253, 253);
   font-weight: 400;
   text-shadow: 1px 1px 2px rgb(13, 13, 13);
 }
@@ -50,7 +50,7 @@
   font-weight: 500;
 }
 .service-item-text p {
-  color: black;
+  color: rgb(234, 226, 226);
 }
 
 /* -------------------------------------------------------------------------- */
