@@ -1,6 +1,12 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .fade-in-text {
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fade-in-text {
+    font-size: 3rem;
   }
 
   .contact-wrapper {
@@ -23,19 +29,15 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .fade-in-text {
-    font-size: 3rem;
-  }
-}
-
 @media screen and (max-width: 500px) {
+ 
+
   h3 {
     font-size: 2rem;
   }
 
   .fade-in-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -50,10 +52,6 @@
 
   .desktop-only {
     display: none;
-  }
-
-  .fade-in-text {
-    font-size: 2.5rem;
   }
 
   .nav-logo {
