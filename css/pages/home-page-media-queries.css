@@ -69,7 +69,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: url("/assets/images/header1.jpg");
+    background: url("/assets/images/header2.jpg");
     clip-path: none;
     height: 130vh;
     background-position: center;
@@ -159,6 +159,7 @@
 
   #services {
     padding: 2rem 0;
+    margin: 0;
   }
 
   /* -------------------------------------------------------------------------- */

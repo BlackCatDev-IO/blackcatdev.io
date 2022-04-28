@@ -27,7 +27,7 @@
   /* min-height: 350px; */
   max-width: 600px;
   object-fit: cover;
-  box-shadow: 7px 7px 10px rgb(51, 49, 49);
+  box-shadow: 7px 7px 10px rgb(54, 54, 54);
 }
 
 .service-item-text {
