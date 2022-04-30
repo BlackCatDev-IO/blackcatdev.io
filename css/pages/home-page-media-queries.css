@@ -4,46 +4,10 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .fade-in-text {
-    font-size: 3rem;
-  }
-
-  .contact-wrapper {
-    flex-direction: column;
-  }
-
-  .contact-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 375px;
-  }
-
-  .contact-text-wrapper h3 {
-    margin: 0;
-  }
-
-  .contact-text-wrapper a {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
- 
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  .fade-in-text {
-    font-size: 2.3rem;
-  }
-}
-
 @media (max-width: 700px) {
   h2 {
-    font-size: 2.3rem;
+    font-size: 5rem;
+    margin: 0;
   }
 
   .mobile-only {
@@ -164,6 +128,43 @@
   /*                           CONTACT SECTION MOBILE                           */
   /* -------------------------------------------------------------------------- */
 
+  #contact {
+    padding: 4rem;
+  }
+
+  .fade-in-text {
+    font-size: 3rem;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-text-wrapper h3 {
+    margin: 0;
+  }
+
+  .contact-text-wrapper a {
+    margin: 0;
+  }
+
+  #contact h2 {
+    margin: 0;
+  }
+
   .contact-wrapper {
     min-height: 750px;
     padding: 60px 0;
@@ -192,10 +193,6 @@
 
   .first-name {
     margin: 0;
-  }
-
-  #contact-submit-button {
-    background: var(--button-color);
   }
 
   #hamburger {
@@ -248,9 +245,24 @@
   }
 }
 
-@media (min-width: 768px) {
-  .project-item {
-    width: calc(50% - 10px);
-    height: 600px;
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .fade-in-text {
+    font-size: 2.3rem;
+  }
+
+  #contact {
+    padding: 1.7rem;
+  }
+
+  #contact-form {
+    width: 100%;
   }
 }

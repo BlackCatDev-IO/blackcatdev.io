@@ -2,25 +2,28 @@
   /* --main-bg-color: #0b101a; */
   --main-bg-color: #16202a;
   --button-color: #4b28d8;
+  --section-title-color: rgba(146, 146, 146, 0.302);
+}
+
+body:not(.keyboardUser) *:focus {
+  outline: none;
 }
 
 html {
   background: var(--main-bg-color);
 }
 
-section {
-  margin: 1rem auto;
-}
-
-section h2 {
-  margin: 3rem 0;
-  text-align: center;
-}
-
 h1 {
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   animation-iteration-count: infinite;
+}
+
+h2 {
+  color: var(--section-title-color);
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 li {
@@ -570,43 +573,25 @@ nav a {
 /*                               Contact Section                              */
 /* -------------------------------------------------------------------------- */
 
-.contact-form-block {
-  font-family: Opensauceone, sans-serif;
-  padding: 2rem;
-  background: var(--main-bg-color);
+#contact {
+  background: url("/assets/images/abstract3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.428);
+  padding-top: 6rem;
 }
 
-.contact-form-block div,
-.contact-form-block input,
-.contact-form-block textarea,
-.contact-form-block label {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
+#contact h3 {
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.parent-component p,
-div,
-span {
-  font-size: 0.8em;
-}
-
-.contact-form-block div > input {
-  background: #505050;
-  font-family: Opensauceone, sans-serif;
-  border: none;
-  font-weight: 400;
-}
-
-.form-message-wrapper > textarea {
-  background: #505050;
-  font-family: Opensauceone, sans-serif;
-  border: none;
+#contact-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-wrapper {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -621,8 +606,10 @@ span {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: space-evenly;
+  align-items: center;
   justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .contact-wrapper > h2 {
@@ -632,41 +619,23 @@ span {
 .contact-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  height: 375px;
+  height: 275px;
 }
 
 .contact-text-wrapper a {
   font-size: 1.2rem;
 }
 .contact-text-wrapper h3 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .contact-text-wrapper a {
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
-.form-wrap {
-  background: black;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.form-wrap2 {
-  background: #131618;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.form-first-and-last-name-wrapper {
-  display: flex;
-}
-
-.first-name {
-  margin-right: 1rem;
-}
+/* 
+Hides the label but keeps it visible for 
+screen readers for accessibility purposes 
+*/
 
 .sr-only {
   border: 0;
@@ -677,17 +646,6 @@ span {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-#contact {
-  margin-bottom: 6rem;
-}
-
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  align-items: end;
 }
 
 .email-icon {
@@ -706,7 +664,7 @@ span {
   padding: 0.6rem 2.5rem;
   transition: 0.25s ease all;
   width: 16rem;
-  /* margin: 0 auto 2rem auto; */
+  margin-top: 2rem;
 }
 
 #contact-submit-button:hover {
@@ -714,9 +672,36 @@ span {
   transition: 0.25s ease all;
 }
 
-.container {
-  width: 70%;
-  margin: 0 auto;
+#email-link {
   display: flex;
-  justify-content: space-between;
+}
+
+#contact-form input,
+#contact-form textarea {
+  background: #ffffff3d;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 2rem;
+  min-height: 50px;
+  text-indent: 10px;
+  width: 100%;
+}
+
+#contact-form {
+  width: 45%;
+  max-width: 400px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-form textarea {
+  height: 200px;
+  vertical-align: text-top;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.885);
 }

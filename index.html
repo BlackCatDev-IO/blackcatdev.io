@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link
-    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400&family=Manrope:wght@200;300;400;500&family=Montserrat:wght@300;400&family=Nunito:wght@200;300;400;500&family=Oxygen:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300;400&family=Sen&family=Sora:wght@100;200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400&family=Manrope:wght@200;300;400;500&family=Montserrat:wght@300;400&family=Nunito:wght@200;300;400;500&family=Oxygen:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300;400;500&family=Sen&family=Sora:wght@100;200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
@@ -246,52 +246,23 @@
     </section> -->
     <section id="contact">
       <h2 data-aos="fade-in">Contact</h2>
-      <div class="contact-wrapper background-video black-gradient" data-aos="fade-in">
+      <div class="contact-wrapper" data-aos="fade-in">
         <div class="contact-text-wrapper">
           <h3>Have a project? </h3>
           <h3>Get in touch</h3>
-          <a href="mailto:loren@blackcatdev.io">
+          <a id="email-link" href="mailto:loren@blackcatdev.io">
             <img class="email-icon" src="./assets/icons/email1.png" alt="email icon">
             loren@blackcatdev.io</a>
         </div>
-        <div class="contact-form-block">
-          <form id="email-form" name="email-form" data-name="Email Form" class="contact-form"
-            action="https://formsubmit.co/2ac06083af6e514f2ed80a505ee0a4e6" method="POST">
-            <div class="form-first-and-last-name-wrapper">
-              <div class="first-name">
-                <label for="First-Name" class="form-label">First Name</label>
-                <input type="text" class="form-field w-input" maxlength="256" name="First-Name" data-name="First Name"
-                  placeholder="First Name" id="First-Name" required="">
-              </div>
-              <div class="last-name">
-                <label for="Last-Name" class="form-label">Last Name</label>
-                <input type="text" class="form-field w-input" maxlength="256" name="Last-Name" data-name="Last Name"
-                  placeholder="Last Name" id="Last-Name" required="">
-              </div>
-            </div>
-            <div class="form-email-wrapper">
-              <label for="Enter-your-e-mail" class="form-label">Your E-mail</label>
-              <input type="email" class="form-field email w-input" maxlength="256" name="Enter-your-e-mail"
-                data-name="Enter your e-mail" placeholder="Enter your e-mail" id="Enter-your-e-mail" required="">
-            </div>
-            <div class="form-message-wrapper">
-              <label for="Detail" class="form-label">Tell me a bit more what you are looking
-                for?</label>
-              <textarea placeholder="Tell me about your project" maxlength="5000" id="Detail" name="Detail"
-                data-name="Detail" class="form-field budget-text-area w-input">
-                </textarea>
-            </div>
-            <div class="button-wrapper">
-              <button type="submit" id="contact-submit-button">Send Message</button>
-            </div>
-          </form>
-          <div class="success-message w-form-done">
-            <div class="text-block _18px white">Thank you! Your submission has been received!</div>
-          </div>
-          <div class="error-message w-form-fail">
-            <div class="text-block _16px">Oops! Something went wrong while submitting the form.</div>
-          </div>
-        </div>
+        <form id="contact-form" action="https://formsubmit.co/loren@blackcatdev.io" method="post">
+          <label for="name" class="sr-only">Name</label>
+          <input id="name" name="name" type="text" class="tab-focus" placeholder="Name" required>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" class="tab-focus" placeholder="Email" required>
+          <label for="message" class="sr-only">Message</label>
+          <textarea it="text" id="message" type="text" class="tab-focus" placeholder="Message"></textarea>
+          <button id="contact-submit-button" type="submit">Submit Message</button>
+        </form>
       </div>
     </section>
   </main>
