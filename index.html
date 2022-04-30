@@ -245,24 +245,26 @@
       </div>
     </section> -->
     <section id="contact">
-      <h2 data-aos="fade-in">Contact</h2>
-      <div class="contact-wrapper" data-aos="fade-in">
-        <div class="contact-text-wrapper">
-          <h3>Have a project? </h3>
-          <h3>Get in touch</h3>
-          <a id="email-link" href="mailto:loren@blackcatdev.io">
-            <img class="email-icon" src="./assets/icons/email1.png" alt="email icon">
-            loren@blackcatdev.io</a>
+      <div class="blur-background">
+        <h2 data-aos="fade-in">Contact</h2>
+        <div class="contact-wrapper" data-aos="fade-in">
+          <div class="contact-text-wrapper">
+            <h3>Have a project? </h3>
+            <h3>Get in touch</h3>
+            <a id="email-link" href="mailto:loren@blackcatdev.io">
+              <img class="email-icon" src="./assets/icons/email1.png" alt="email icon">
+              loren@blackcatdev.io</a>
+          </div>
+          <form id="contact-form" action="https://formsubmit.co/loren@blackcatdev.io" method="post">
+            <label for="name" class="sr-only">Name</label>
+            <input id="name" name="name" type="text" class="tab-focus" placeholder="Name" required>
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" name="email" type="email" class="tab-focus" placeholder="Email" required>
+            <label for="message" class="sr-only">Message</label>
+            <textarea it="text" id="message" type="text" class="tab-focus" placeholder="Message"></textarea>
+            <button id="contact-submit-button" type="submit">Submit Message</button>
+          </form>
         </div>
-        <form id="contact-form" action="https://formsubmit.co/loren@blackcatdev.io" method="post">
-          <label for="name" class="sr-only">Name</label>
-          <input id="name" name="name" type="text" class="tab-focus" placeholder="Name" required>
-          <label for="email" class="sr-only">Email</label>
-          <input id="email" name="email" type="email" class="tab-focus" placeholder="Email" required>
-          <label for="message" class="sr-only">Message</label>
-          <textarea it="text" id="message" type="text" class="tab-focus" placeholder="Message"></textarea>
-          <button id="contact-submit-button" type="submit">Submit Message</button>
-        </form>
       </div>
     </section>
   </main>

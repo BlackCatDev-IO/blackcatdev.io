@@ -579,7 +579,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.428);
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
 #contact h3 {
@@ -591,14 +591,21 @@ nav a {
   flex-direction: column;
 }
 
+.blur-background {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.038);
+  width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+}
+
 .contact-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
   min-height: 750px;
-  padding: 60px 40px;
+  padding: 0 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -608,7 +615,8 @@ nav a {
   -ms-flex-align: center;
   align-items: center;
   justify-content: space-around;
-  max-width: 1400px;
+  max-width: 1200px;
+  width: 90%;
   margin: auto;
 }
 
