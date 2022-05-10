@@ -421,7 +421,7 @@ nav a {
 #about {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 4rem;
+  padding: 0 4rem 4rem 4rem;
   font-family: "Montserrat", sans-serif;
   z-index: 2;
   position: relative;
@@ -429,12 +429,13 @@ nav a {
 
 #about h2 {
   text-align: left;
+  margin-bottom: 10rem;
 }
 
 .about-left-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about-left-column img {
