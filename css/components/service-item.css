@@ -27,7 +27,7 @@
   width: 45%;
   max-width: 600px;
   object-fit: cover;
-  box-shadow: 7px 7px 10px rgb(54, 54, 54);
+  box-shadow: 7px 7px 10px rgb(19, 19, 19);
 }
 
 .service-item-text {
