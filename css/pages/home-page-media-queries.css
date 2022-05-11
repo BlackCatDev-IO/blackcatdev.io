@@ -243,6 +243,37 @@
     transform: translateX(-40px);
     background-color: transparent;
   }
+
+  /* -------------------------------------------------------------------------- */
+  /*                            ABOUT SECTION MOBILE                            */
+  /* -------------------------------------------------------------------------- */
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+
+  .avatar {
+    margin-bottom: 0;
+    height: 60vw;
+    width: 60vw;
+    margin: auto;
+  }
+
+  .about-box {
+    width: 90%;
+    padding: 0;
+  }
+
+  .about-box h4 {
+    font-size: 2.5rem;
+  }
+
+  #about h2 {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -259,7 +290,7 @@
   }
 
   #contact {
-    padding: 1.7rem;
+    padding: 1.7rem 0 1.7rem 0;
   }
 
   #contact-form {

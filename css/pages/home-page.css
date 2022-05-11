@@ -490,6 +490,7 @@ nav a {
   color: rgb(126, 165, 205);
   font-weight: 400;
   font-size: 3rem;
+  text-align: left;
 }
 
 .about-box a {
