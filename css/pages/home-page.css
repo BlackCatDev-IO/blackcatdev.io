@@ -80,7 +80,6 @@ nav a {
   animation-iteration-count: infinite;
 }
 
-
 @keyframes scale {
   100% {
     transform: scale(1);
@@ -364,7 +363,6 @@ nav a {
   -webkit-appearance: none;
 }
 
-
 /* -------------------------------------------------------------------------- */
 /*                              SERVICES SECTION                              */
 /* -------------------------------------------------------------------------- */
@@ -545,13 +543,16 @@ nav a {
 /* -------------------------------------------------------------------------- */
 
 #contact {
-  background: url("/assets/images/abstract3.jpg");
+  background: url("/assets/images/header2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.428);
   padding: 6rem 0;
-  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);
+}
+
+#contact h2 {
+  color: rgba(255, 255, 255, 0.428);
 }
 
 #contact h3 {
