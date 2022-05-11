@@ -188,6 +188,7 @@
 @media (max-width: 700px) {
   .mobile-service-item-wrapper {
     flex-direction: column;
+    text-align: center;
   }
 
   .mobile-service-item-wrapper img {
@@ -215,7 +216,7 @@
   .mobile-service-item-wrapper p {
     color: rgb(255, 253, 253);
     font-weight: 400;
-    margin: 2rem 1rem;
+    margin: 2rem;
     font-family: "Nunito", sans-serif;
   }
 }

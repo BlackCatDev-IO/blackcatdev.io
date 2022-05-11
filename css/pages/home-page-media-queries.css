@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   .fade-in-text {
     font-size: 4rem;
   }
@@ -276,7 +276,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
   h3 {
     font-size: 2rem;
   }
