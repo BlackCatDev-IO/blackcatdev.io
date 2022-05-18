@@ -30,8 +30,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
-
-  transition: transform 1.5s ease;
+  transition: transform 1s ease;
   max-height: 500px;
   object-fit: cover;
 }
@@ -60,8 +59,12 @@
   transform: scale(1.07);
 }
 
-.project:hover {
-  transform: scale(1.02);
+.picture {
+  overflow: hidden;
+}
+
+.image-wrapper {
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {

@@ -2,10 +2,6 @@
   --service-description-text: #a58f8f;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                              NEW SERVICE ITEM                              */
-/* -------------------------------------------------------------------------- */
-
 .service-item-container {
   height: 50vh;
   max-height: 500px;
@@ -17,6 +13,7 @@
   justify-content: space-around;
   transition-duration: 0.3s;
   margin: 0 auto 3rem auto;
+  z-index: 1;
 }
 
 .service-item-container:hover {
