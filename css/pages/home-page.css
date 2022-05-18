@@ -400,7 +400,6 @@ nav a {
   position: relative;
   z-index: 10;
   width: 100%;
-  /* height: 0%; */
   max-width: 360px;
   margin-right: 56px;
 }
@@ -458,17 +457,16 @@ nav a {
 }
 
 .about-right-column p {
-  width: 550px;
+  width: 50vw;
 }
 
 .about-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
-  height: 500px;
+  width: 35vw;
   padding: 1rem;
-  color: black;
+  margin-bottom: 4rem;
 }
 
 .about-box p {

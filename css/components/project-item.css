@@ -30,7 +30,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
-  transition: transform 1s ease;
+  transition: transform 2s ease;
   max-height: 500px;
   object-fit: cover;
 }
@@ -44,6 +44,9 @@
   min-width: 200px;
   height: 50%;
   margin-left: 4rem;
+}
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project-text h4 {

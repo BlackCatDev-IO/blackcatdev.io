@@ -251,28 +251,36 @@
   #about {
     flex-direction: column;
     text-align: center;
+    padding: 0 2rem;
   }
- 
+  .about-mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .avatar {
     margin-bottom: 0;
-    height: 60vw;
-    width: 60vw;
+    height: 50vw;
+    width: 50vw;
     margin: auto;
   }
 
   .about-box {
     width: 90%;
     padding: 0;
+    margin: 0;
   }
 
   .about-box h4 {
     font-size: 2.5rem;
+    text-align: center;
   }
 
   #about h2 {
     text-align: center;
-    margin: 1rem 0 3rem 0;
+    margin: 3rem 0 5rem 0;
   }
 }
 
@@ -282,7 +290,7 @@
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .fade-in-text {
