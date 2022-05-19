@@ -1,5 +1,5 @@
 @media screen and (max-width: 840px) {
-  .fade-in-text {
+  #header-text {
     font-size: 4rem;
   }
 }
@@ -130,10 +130,6 @@
 
   #contact {
     padding: 4rem;
-  }
-
-  .fade-in-text {
-    font-size: 3rem;
   }
 
   #contact-form {
@@ -293,8 +289,30 @@
     font-size: 4.5rem;
   }
 
-  .fade-in-text {
+  #header-text {
     font-size: 2.3rem;
+  }
+
+  #contact {
+    padding: 1.7rem 0 1.7rem 0;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+
+  #header-text {
+    font-size: 2rem;
   }
 
   #contact {
