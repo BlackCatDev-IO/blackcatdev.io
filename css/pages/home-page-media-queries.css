@@ -133,7 +133,7 @@
   /* -------------------------------------------------------------------------- */
 
   #contact {
-    padding: 4rem;
+    padding: 6rem 0;
   }
 
   #contact-form {
@@ -301,8 +301,8 @@
     font-size: 2.3rem;
   }
 
-  #contact {
-    padding: 1.7rem 0 1.7rem 0;
+  .blur-background {
+    width: 93%;
   }
 
   #contact-form {
@@ -321,10 +321,6 @@
 
   #header-text {
     font-size: 2rem;
-  }
-
-  #contact {
-    padding: 1.7rem 0 1.7rem 0;
   }
 
   #contact-form {

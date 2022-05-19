@@ -571,7 +571,7 @@ nav a {
   width: 90%;
   margin: auto;
   padding-top: 4rem;
-  margin-top: 8rem;
+  max-width: 1300px;
 }
 
 @-moz-document url-prefix() {
