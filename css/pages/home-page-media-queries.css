@@ -40,6 +40,10 @@
     position: static;
   }
 
+  #header-text {
+    font-size: 3.5rem;
+  }
+
   /* -------------------------------------------------------------------------- */
   /*                                 MOBILE MENU                                */
   /* -------------------------------------------------------------------------- */
@@ -279,7 +283,11 @@
     margin: 3rem 0 5rem 0;
   }
 }
-
+@media screen and (max-width: 600px) {
+  #header-text {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 530px) {
   h3 {
     font-size: 2rem;
