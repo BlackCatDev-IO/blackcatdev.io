@@ -124,8 +124,18 @@
   /* -------------------------------------------------------------------------- */
 
   #services {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     margin: 0;
+  }
+
+  .project-container {
+    margin-top: 0;
+  }
+  /* -------------------------------- PROJECTS -------------------------------- */
+
+  #projects {
+    margin: 0;
+    clip-path: none;
   }
 
   /* -------------------------------------------------------------------------- */
@@ -133,7 +143,7 @@
   /* -------------------------------------------------------------------------- */
 
   #contact {
-    padding: 6rem 0;
+    padding: 6rem 0 1rem 0;
   }
 
   #contact-form {
@@ -251,7 +261,7 @@
   #about {
     flex-direction: column;
     text-align: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .about-mobile-container {
     display: flex;
@@ -270,7 +280,7 @@
   .about-box {
     width: 90%;
     padding: 0;
-    margin: 0;
+    margin: 2rem 0 0 0;
   }
 
   .about-box h4 {
