@@ -1,14 +1,15 @@
+const mobileMenuToggle = document.getElementById("menu-button");
+
 AOS.init({
   duration: 700,
 });
 
-addMobileMenuListeners();
-
 initSmoothScrolling();
+disableScrollingOnMobileMenu();
+addMobileMenuListeners();
 
 function addMobileMenuListeners() {
   const mobileLinks = document.getElementsByClassName("close-menu");
-  mobileLinks[0].addEventListener("click", closeMobileMenu);
 
   for (const link of mobileLinks) {
     link.addEventListener("click", closeMobileMenu);
@@ -16,8 +17,19 @@ function addMobileMenuListeners() {
 }
 
 function closeMobileMenu() {
-  let mobileMenuToggle = document.getElementById("menu-button");
   mobileMenuToggle.checked = false;
+  document.body.style.overflow = "scroll";
+}
+
+function disableScrollingOnMobileMenu() {
+  mobileMenuToggle.addEventListener("change", (e) => {
+    console.log("change");
+    if (e.target.checked) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  });
 }
 
 function initSmoothScrolling() {
@@ -61,7 +73,7 @@ function setIsKeyboardUser(isKeyboard) {
   }
 }
 
-// Disables input outlines except for when user is navigating via 
+// Disables input outlines except for when user is navigating via
 // tab key to maintain accessibility
 document.addEventListener("keydown", (e) => {
   if (e.key === "Tab") {
