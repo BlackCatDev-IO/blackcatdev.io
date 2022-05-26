@@ -31,7 +31,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: url("/assets/images/header2.jpg");
     clip-path: none;
     height: 130vh;
     background-position: center;
@@ -320,7 +319,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   h3 {
     font-size: 2rem;
   }
@@ -335,5 +334,11 @@
 
   #contact-form {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #header-text {
+    font-size: 1.8rem;
   }
 }
