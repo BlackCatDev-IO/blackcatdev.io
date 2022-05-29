@@ -3,6 +3,7 @@
   --button-color: #4b28d8;
   --section-title-color: rgba(146, 146, 146, 0.302);
   --mozilla-blur-sub-color: rgba(255, 255, 255, 0.076);
+  --header-bg-color: rgba(0, 0, 0, 0.65);
 }
 
 body:not(.keyboardUser) *:focus {
@@ -13,12 +14,6 @@ html {
   background: var(--main-bg-color);
 }
 
-h1 {
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  animation-iteration-count: infinite;
-}
-
 h2 {
   color: var(--section-title-color);
   font-size: 6rem;
@@ -27,21 +22,20 @@ h2 {
 }
 
 li {
-  list-style-type: none;
   color: black;
 }
 
-nav a {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
-}
+/* -------------------------------------------------------------------------- */
+/*                             Hero Section Header                            */
+/* -------------------------------------------------------------------------- */
 
 #home-header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url("/assets/images/header2.jpg");
+  background: linear-gradient(var(--header-bg-color), var(--header-bg-color)),
+    url("/assets/images/blackcatdev-io-header.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   height: 140vh;
   background-position: center;
@@ -56,6 +50,10 @@ nav a {
   object-fit: cover;
 }
 
+#header-text {
+  animation-iteration-count: infinite;
+}
+
 #header-text span {
   display: inline-block;
   opacity: 0;
@@ -65,11 +63,6 @@ nav a {
 #header-text {
   display: inline-block;
   color: rgba(255, 255, 255, 0.818);
-  animation: fadeIn linear 7s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
   animation-iteration-count: infinite;
   margin-top: 40vh;
   padding: 0.5rem 2rem 0.5rem 2rem;
@@ -78,8 +71,25 @@ nav a {
   border-radius: 5px;
 }
 
+@keyframes delayed-fade {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-moz-document url-prefix() {
   #header-text {
+    backdrop-filter: blur(20px);
+    background: var(--mozilla-blur-sub-color);
+  }
+
+  #sub-heading {
     backdrop-filter: blur(20px);
     background: var(--mozilla-blur-sub-color);
   }
@@ -170,54 +180,15 @@ nav a {
   }
 }
 
-.fade-underline a {
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-
-  border-bottom: 3px solid transparent;
-}
-
-.fade-underline a:hover {
-  border-bottom: 3px solid currentColor;
-}
-
-.nav-link {
-  margin-left: 35px;
-  -webkit-transition: color 600ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition: color 600ms cubic-bezier(0.23, 1, 0.32, 1);
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.mobile-only {
-  display: none;
-}
-
-.nav-menu-button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 32px;
-  height: 19px;
-  margin-left: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  cursor: pointer;
-  position: relative;
-  z-index: 1000;
+#sub-heading {
+  display: inline-block;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 2.3rem;
+  margin-top: 2rem;
+  color: rgb(255, 255, 255);
+  animation: delayed-fade linear 4.5s;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
 }
 
 .border {
@@ -234,10 +205,6 @@ nav a {
   margin-left: auto;
   padding-right: 60px;
   padding-left: 60px;
-}
-
-.nav-wrap > a {
-  font-size: 1.2rem;
 }
 
 #scroll-cta span {
@@ -315,6 +282,7 @@ nav a {
     opacity: 0;
   }
 }
+
 @keyframes sdb03 {
   0% {
     opacity: 0;
@@ -331,46 +299,7 @@ nav a {
   }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                             Hero Section Header                            */
-/* -------------------------------------------------------------------------- */
-
-.shadow-wrap {
-  filter: drop-shadow(-1px 6px 6px rgba(16, 17, 17, 0.552));
-}
-
-.background-video {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-  height: 800px;
-  color: white;
-}
-
-.background-video > video {
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  right: -100%;
-  bottom: -100%;
-  top: -100%;
-  left: -100%;
-  object-fit: cover;
-  z-index: -100;
-}
-
-.background-video > video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                              SERVICES SECTION                              */
-/* -------------------------------------------------------------------------- */
+/* ---------------------------- SERVICES SECTION ---------------------------- */
 
 #services {
   margin-top: -13vh;
