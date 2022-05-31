@@ -1,3 +1,7 @@
+@import "../global/normalize.css";
+@import "../global/general.css";
+@import "../global/animations.css";
+
 :root {
   --main-bg-color: #16202a;
   --button-color: #4b28d8;
@@ -74,6 +78,7 @@ section h3 {
 
 .header-text h1 {
   font-weight: 500;
+  animation: fade-up 0.5s;
 }
 
 .header-text h2 {
@@ -81,6 +86,7 @@ section h3 {
   font-size: 2rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
+  animation: fade-up 1s;
 }
 
 .bg-container {
@@ -94,6 +100,7 @@ section h3 {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  animation: fade-opacity linear 1s;
 }
 
 #shop-the-look p {

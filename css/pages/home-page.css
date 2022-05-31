@@ -1,3 +1,11 @@
+@import "../global/normalize.css";
+@import "../global/general.css";
+@import "../pages/home-page-media-queries.css";
+@import "../global/home-page-media-queries.css";
+@import "../components/service-item.css";
+@import "../components/project-item.css";
+@import "../global/animations.css";
+
 :root {
   --main-bg-color: #16202a;
   --button-color: #4b28d8;
@@ -71,18 +79,6 @@ li {
   border-radius: 5px;
 }
 
-@keyframes delayed-fade {
-  0% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-moz-document url-prefix() {
   #header-text {
     backdrop-filter: blur(20px);
@@ -92,12 +88,6 @@ li {
   #sub-heading {
     backdrop-filter: blur(20px);
     background: var(--mozilla-blur-sub-color);
-  }
-}
-
-@keyframes scale {
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -173,13 +163,6 @@ li {
   animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
 #sub-heading {
   display: inline-block;
   padding: 0.5rem 2rem 0.5rem 2rem;
@@ -245,8 +228,8 @@ li {
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
+  -webkit-animation: circle-flare 3s infinite;
+  animation: circle-flare 3s infinite;
   box-sizing: border-box;
 }
 
@@ -265,38 +248,6 @@ li {
 
 #scroll-cta a:hover {
   opacity: 0.5;
-}
-
-@-webkit-keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /* ---------------------------- SERVICES SECTION ---------------------------- */
