@@ -40,6 +40,7 @@ h3 {
 
 img {
   width: 100%;
+  margin: 5rem 0;
 }
 
 section {
@@ -52,8 +53,22 @@ section {
 }
 
 section h3 {
-  margin: 5rem 0;
   font-weight: 400;
+}
+
+section p {
+  width: 68%;
+  text-align: center;
+}
+
+#header-image-container {
+  background: url("/assets/images/fashion-store/fashion-store-header.jpg");
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  animation: fade-opacity linear 1s;
 }
 
 #summary {
@@ -64,12 +79,12 @@ section h3 {
   color: var(--section-text-color);
   font-size: 3.5rem;
   font-weight: 400;
-  margin-top: 2rem;
+  margin: 4rem auto 0 auto;
+  animation: fade-up 1s;
 }
 
 #summary p {
-  margin: 4rem auto 0 auto;
-  width: 90%;
+  margin: 0 auto 4rem auto;
 }
 
 .header-text {
@@ -89,27 +104,21 @@ section h3 {
   animation: fade-up 1s;
 }
 
-.bg-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: url("/assets/images/fashion-store/fashion-store-header.jpg");
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  animation: fade-opacity linear 1s;
-}
-
 #shop-the-look p {
   width: 90%;
-  margin-top: 0;
+  margin: 0;
 }
 
 #fashion-video {
   position: relative;
   padding-bottom: 41.86046511627907%;
   height: 0;
+}
+
+.line {
+  width: 50px;
+  background-color: rgb(238, 225, 225);
+  height: 3px;
+  margin: 3rem auto;
+  border-radius: 20px;
 }
