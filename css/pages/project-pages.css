@@ -38,7 +38,7 @@ h3 {
   color: var(--section-text-color);
 }
 
-img {
+section img {
   width: 100%;
   margin: 5rem 0;
 }
@@ -50,6 +50,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 80%;
+  max-width: 1200px;
 }
 
 section h3 {
@@ -59,16 +60,6 @@ section h3 {
 section p {
   width: 68%;
   text-align: center;
-}
-
-#header-image-container {
-  background: url("/assets/images/fashion-store/fashion-store-header.jpg");
-  height: 60vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  animation: fade-opacity linear 1s;
 }
 
 #summary {
@@ -88,7 +79,7 @@ section p {
 }
 
 .header-text {
-  margin-left: 3rem;
+  text-align: center;
 }
 
 .header-text h1 {
@@ -121,4 +112,27 @@ section p {
   height: 3px;
   margin: 3rem auto;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 530px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+
+  #summary h2 {
+    font-size: 2.5rem;
+  }
+
+  .desktop-only {
+    display: none;
+  }
 }
