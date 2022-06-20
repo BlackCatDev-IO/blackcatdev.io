@@ -95,6 +95,11 @@ section p {
   animation: fade-up 1s;
 }
 
+.image-header img {
+  max-width: 1300px;
+  width: 100%;
+}
+
 #shop-the-look p {
   width: 90%;
   margin: 0;
@@ -112,6 +117,10 @@ section p {
   height: 3px;
   margin: 3rem auto;
   border-radius: 20px;
+}
+
+#galaxy-product {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 530px) {
