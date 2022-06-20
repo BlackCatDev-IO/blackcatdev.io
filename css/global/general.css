@@ -1,6 +1,4 @@
 body {
-  background-color: #0c0e0f;
-  background-color: transparent;
   font-family: "Sen", sans-serif;
   color: #fff;
   font-size: 18px;
@@ -344,7 +342,7 @@ nav a {
     margin: 0;
     font-family: "Montserrat", sans-serif;
   }
-  
+
   .mobile-only {
     display: initial;
   }
