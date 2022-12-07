@@ -5,11 +5,12 @@
 @import "../components/project-item.css";
 
 :root {
-  --main-bg-color: #16202a;
+  --main-bg-color: #0a192e;
   --button-color: #4b28d8;
   --section-title-color: rgba(146, 146, 146, 0.302);
   --mozilla-blur-sub-color: rgba(255, 255, 255, 0.076);
   --header-bg-color: rgba(0, 0, 0, 0.65);
+  --card-background: rgba(255, 255, 255, 0.038);
 }
 
 body:not(.keyboardUser) *:focus {
@@ -441,8 +442,8 @@ li {
 }
 
 .blur-background {
-  backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.038);
+  background: var(--card-background);
+  border-radius: 35px;
   width: 90%;
   margin: auto;
   padding-top: 4rem;
