@@ -263,7 +263,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/assets/images/header1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -422,11 +421,9 @@ li {
 /* -------------------------------------------------------------------------- */
 
 #contact {
-  background: url("/assets/images/header2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.428);
   padding: 6rem 0;
 }
 
