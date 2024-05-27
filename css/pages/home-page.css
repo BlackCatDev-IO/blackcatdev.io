@@ -1,8 +1,8 @@
-@import "../global/normalize.css";
-@import "../global/general.css";
-@import "../global/animations.css";
-@import "../components/service-item.css";
-@import "../components/project-item.css";
+@import '../global/normalize.css';
+@import '../global/general.css';
+@import '../global/animations.css';
+@import '../components/service-item.css';
+@import '../components/project-item.css';
 
 :root {
   --main-bg-color: #0a192e;
@@ -32,6 +32,19 @@ li {
   color: black;
 }
 
+dialog {
+  background-color: var(--main-bg-color);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 30px 60px 30px;
+  text-align: center;
+}
+
+dialog p {
+  margin: 0;
+}
+
 .under-development {
   padding: 3rem;
   margin: auto;
@@ -47,7 +60,7 @@ li {
   justify-content: flex-start;
   align-items: center;
   background: linear-gradient(var(--header-bg-color), var(--header-bg-color)),
-    url("/assets/images/blackcatdev-io-header.jpg");
+    url('/assets/images/blackcatdev-io-header.jpg');
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   height: 140vh;
   background-position: center;
@@ -210,7 +223,7 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
@@ -226,7 +239,7 @@ li {
   top: 0;
   left: 0;
   z-index: -1;
-  content: "";
+  content: '';
   width: 44px;
   height: 44px;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
@@ -305,7 +318,7 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 0 4rem 4rem 4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 2;
   position: relative;
 }
@@ -528,7 +541,7 @@ screen readers for accessibility purposes
   margin-right: 20px;
 }
 
-#contact-submit-button {
+.form-button {
   border: 1px solid;
   height: 50px;
   background-color: black;
@@ -541,7 +554,7 @@ screen readers for accessibility purposes
   margin-top: 2rem;
 }
 
-#contact-submit-button:hover {
+.form-button:hover {
   background-color: var(--button-color);
   transition: 0.25s ease all;
 }
@@ -578,6 +591,16 @@ screen readers for accessibility purposes
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.885);
+}
+
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    rgb(38, 20, 131),
+    rebeccapurple,
+    rgb(14, 39, 64)
+  );
+  opacity: 0.75;
 }
 
 @media screen and (max-width: 840px) {
