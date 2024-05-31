@@ -285,7 +285,7 @@ dialog p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -150px;
+  margin-top: 15px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
@@ -343,7 +343,7 @@ dialog p {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  margin-top: -150px;
+  margin-top: 30px;
 }
 
 .about-right-column li {
