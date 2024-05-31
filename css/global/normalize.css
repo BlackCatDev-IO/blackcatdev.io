@@ -242,6 +242,7 @@ button,
 html input[type="button"],
 input[type="reset"] {
   -webkit-appearance: button;
+  appearance: button;
   /* 2 */
   cursor: pointer;
   /* 3 */
@@ -298,6 +299,7 @@ input[type='number']::-webkit-outer-spin-button {
  */
 input[type='search'] {
   -webkit-appearance: none;
+  appearance: none;
   /* 1 */
 }
 /**
