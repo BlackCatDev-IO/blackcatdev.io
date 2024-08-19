@@ -48,11 +48,6 @@ dialog p {
   margin: 0;
 }
 
-.under-development {
-  padding: 3rem;
-  margin: auto;
-}
-
 /* -------------------------------------------------------------------------- */
 /*                             Hero Section Header                            */
 /* -------------------------------------------------------------------------- */
@@ -576,10 +571,6 @@ screen readers for accessibility purposes
     font-size: 1.1rem;
   }
 
-  .shadow-wrap {
-    filter: none;
-  }
-
   #home-header {
     display: flex;
     flex-direction: column;
@@ -652,22 +643,6 @@ screen readers for accessibility purposes
     -ms-flex-align: center;
     align-items: space-evenly;
     justify-content: space-around;
-  }
-
-  .contact-form-block {
-    font-family: Opensauceone, sans-serif;
-    padding: 3rem 1rem;
-    background: var(--main-bg-color);
-    width: 95%;
-  }
-
-  .form-first-and-last-name-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .first-name {
-    margin: 0;
   }
 
   /* -------------------------------------------------------------------------- */
