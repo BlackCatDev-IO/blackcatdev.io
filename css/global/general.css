@@ -1,5 +1,5 @@
 body {
-  font-family: "Sen", sans-serif;
+  font-family: 'Sen', sans-serif;
   color: #fff;
   font-size: 18px;
   line-height: 1.8;
@@ -63,11 +63,6 @@ h6 {
   letter-spacing: -0.04em;
 }
 
-p {
-  margin-bottom: 32px;
-  font-size: 16px;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -89,11 +84,6 @@ li {
   padding-top: 16px;
   padding-bottom: 16px;
   list-style-type: none;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
 }
 
 strong {
@@ -123,7 +113,7 @@ figcaption {
 }
 
 nav a {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -340,7 +330,7 @@ nav a {
 
   .nav-link {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .mobile-only {
