@@ -31,10 +31,6 @@ h2 {
   font-weight: 500;
 }
 
-li {
-  color: black;
-}
-
 dialog {
   background-color: var(--main-bg-color);
   border-radius: 15px;
@@ -284,13 +280,65 @@ dialog p {
   margin: 3rem 0;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 50px 40px;
-  max-width: 1200px;
 }
 
 .project-container > img {
   border-radius: 10px;
   width: 55%;
   margin-right: 50px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: var(--card-background);
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.project-with-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+.project-description h4 {
+  text-align: center;
+}
+
+.project-description ul {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.project-description li {
+  list-style: disc;
+}
+
+.half-card {
+  width: 22rem;
+  padding: 20px 0;
+}
+
+.half-card p {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.half-card > img {
+  width: 30%;
+  margin: 2.5rem 0;
 }
 
 .epic-skies-title-row {
@@ -665,7 +713,7 @@ screen readers for accessibility purposes
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .project-container {
     flex-direction: column-reverse;
     padding: 20px; /* Adjust padding */
@@ -673,11 +721,29 @@ screen readers for accessibility purposes
 
   .project-container > img {
     margin: 20px 0;
-    width: 75%;
+    width: 95%;
   }
 
   .epic-skies {
     margin-top: 20px; /* Adjust margin for vertical layout */
+  }
+}
+
+@media (max-width: 850px) {
+  .project-with-description {
+    flex-direction: column;
+  }
+
+  .half-card {
+    margin-bottom: 4rem;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  .project-description li {
+    width: 100%;
   }
 }
 
