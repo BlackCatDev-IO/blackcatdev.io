@@ -353,14 +353,15 @@ dialog p {
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
+  text-wrap: nowrap;
 }
 
 .epic-skies-title-row span:nth-child(1) {
-  font-weight: 900; /* Bold */
+  font-weight: 900;
 }
 
 .epic-skies-title-row span:nth-child(2) {
-  font-weight: 100; /* Thin */
+  font-weight: 100;
 }
 
 .epic-skies {
