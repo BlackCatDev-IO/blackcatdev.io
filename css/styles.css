@@ -782,7 +782,7 @@ screen readers for accessibility purposes
 
 @media screen and (max-width: 530px) {
   main {
-    padding: 0 35px;
+    padding: 0 20px;
   }
   h3 {
     font-size: 2rem;
