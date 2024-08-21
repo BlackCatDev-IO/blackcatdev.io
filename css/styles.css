@@ -313,6 +313,7 @@ dialog p {
   align-items: center;
   width: 45%;
 }
+
 .project-description h4 {
   text-align: center;
 }
@@ -324,6 +325,10 @@ dialog p {
 
 .project-description li {
   list-style: disc;
+}
+
+.project-description a {
+  text-decoration: underline;
 }
 
 .half-card {
@@ -384,6 +389,14 @@ dialog p {
 
 .app-store-button-row > a > img {
   width: 125px;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1.5px;
+  background-color: var(--section-title-color);
+  margin: 4rem 0;
+  width: 100%;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -597,6 +610,10 @@ screen readers for accessibility purposes
 }
 
 @media screen and (max-width: 840px) {
+  h2 {
+    font-size: 3rem;
+  }
+
   #header-text {
     font-size: 4rem;
   }
@@ -607,6 +624,10 @@ screen readers for accessibility purposes
 }
 
 @media (max-width: 700px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
   .mobile-only {
     display: initial;
   }
@@ -748,6 +769,11 @@ screen readers for accessibility purposes
 }
 
 @media screen and (max-width: 600px) {
+  .epic-skies-title-row {
+    font-size: 2rem;
+    width: 60%;
+  }
+
   #header-text {
     font-size: 3rem;
   }
@@ -762,7 +788,7 @@ screen readers for accessibility purposes
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #header-text {
