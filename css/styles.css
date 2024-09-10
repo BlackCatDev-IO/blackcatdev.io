@@ -379,16 +379,24 @@ dialog p {
 .link-column {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+}
+
+.link-column > a > img {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .link-column > a {
-  margin-top: 1.3rem;
+  display: flex;
+  margin-top: 5px;
 }
 
 .social-icons {
   display: flex;
-  gap: 1.8rem;
+  gap: 3rem;
   margin-top: 1rem;
+  margin-left: 4px;
 }
 
 .social-icons a > img {
