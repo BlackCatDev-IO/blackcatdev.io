@@ -83,8 +83,6 @@ li {
   list-style-type: none;
 }
 
-
-
 strong {
   font-weight: bold;
 }
@@ -195,10 +193,11 @@ nav a {
   z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox; */
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; */
+  align-items: center;
 }
+
 .nav-menu-links-wrap {
   display: -webkit-box;
   display: -webkit-flex;
