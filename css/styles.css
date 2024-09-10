@@ -71,6 +71,7 @@ dialog p {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
+  animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 #header-text {
@@ -97,75 +98,47 @@ dialog p {
 }
 
 #header-text span:nth-child(1) {
-  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 0.2s;
 }
-
 #header-text span:nth-child(2) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 0.4s;
 }
-
 #header-text span:nth-child(3) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 0.6s;
 }
-
 #header-text span:nth-child(4) {
-  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 0.8s;
 }
-
 #header-text span:nth-child(5) {
-  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 1s;
 }
-
 #header-text span:nth-child(6) {
-  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 1.2s;
 }
-
 #header-text span:nth-child(7) {
-  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 1.4s;
 }
-
 #header-text span:nth-child(8) {
-  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 1.6s;
 }
-
 #header-text span:nth-child(9) {
-  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 1.8s;
 }
-
 #header-text span:nth-child(10) {
-  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 2s;
 }
-
 #header-text span:nth-child(11) {
-  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 2.2s;
 }
-
 #header-text span:nth-child(12) {
-  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 2.4s;
 }
 
 #header-text span:nth-child(13) {
-  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 2.6s;
 }
-
 #header-text span:nth-child(14) {
-  animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#header-text span:nth-child(15) {
-  animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#header-text span:nth-child(16) {
-  animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#header-text span:nth-child(17) {
-  animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-#header-text span:nth-child(18) {
-  animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation-delay: 2.8s;
 }
 
 #sub-heading {
@@ -784,6 +757,12 @@ screen readers for accessibility purposes
 
   .project-description li {
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .link-column {
+    margin-top: 4rem;
   }
 }
 
