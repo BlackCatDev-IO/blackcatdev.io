@@ -32,14 +32,16 @@ form.addEventListener('submit', async (event) => {
 
     if (response.ok) {
       form.reset();
-      resetSubmitButton();
       emailDialog.showModal();
+    } else {
+      alert(await response.text());
     }
   } catch (error) {
     console.error('Error submitting the form', error);
     alert('Failed to submit the form. Please try again.');
-    resetSubmitButton();
   }
+
+  resetSubmitButton();
 });
 
 function resetSubmitButton() {

@@ -268,6 +268,10 @@
             <label for="message" class="sr-only">Message</label>
             <textarea id="message" name="message" type="text" class="tab-focus" placeholder="Message"
               required></textarea>
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
             <button id="contact-submit-button" class="form-button" type="submit">Submit Message</button>
           </form>
           <dialog id="email-dialog">

@@ -1,3 +1,12 @@
+const ALLOWED_ORIGIN = 'https://blackcatdev.io';
+
+const MAX_NAME_LENGTH = 100;
+const MAX_EMAIL_LENGTH = 254;
+const MAX_MESSAGE_LENGTH = 5000;
+const MAX_LINKS = 2;
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const LINK_PATTERN = /https?:\/\/|www\./gi;
+
 export default {
 	async fetch(request, env) {
 		return handleRequest(request, env);
@@ -6,29 +15,67 @@ export default {
 
 async function handleRequest(request, env) {
 	if (request.method !== 'POST') {
-		return new Response('Method Not Allowed', {
-			status: 405,
-			headers: { 'Content-Type': 'text/plain' },
-		});
+		return textResponse('Method Not Allowed', 405);
+	}
+
+	if (request.headers.get('Origin') !== ALLOWED_ORIGIN) {
+		return textResponse('Forbidden', 403);
 	}
 
 	const formData = await request.formData();
-	const name = formData.get('name');
-	const email = formData.get('email');
-	const message = formData.get('message');
+
+	// Honeypot: hidden from people, filled in by bots. Pretend it worked so they don't adapt.
+	if (formData.get('website')) {
+		return textResponse('Thank you for your message!', 200);
+	}
+
+	const name = (formData.get('name') ?? '').toString().trim();
+	const email = (formData.get('email') ?? '').toString().trim();
+	const message = (formData.get('message') ?? '').toString().trim();
+
+	const validationError = validate(name, email, message);
+	if (validationError) {
+		return textResponse(validationError, 400);
+	}
 
 	const sendEmailResponse = await sendEmail(name, email, message, env);
 
 	if (!sendEmailResponse.ok) {
-		return new Response('Failed to send message.', {
-			status: 500,
-			headers: { 'Content-Type': 'text/plain' },
-		});
+		return textResponse('Failed to send message.', 500);
 	}
 
-	return new Response('Thank you for your message!', {
-		status: 200,
-		headers: { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' },
+	return textResponse('Thank you for your message!', 200);
+}
+
+function validate(name, email, message) {
+	if (!name || !email || !message) {
+		return 'Please fill out all fields.';
+	}
+	if (name.length > MAX_NAME_LENGTH || email.length > MAX_EMAIL_LENGTH || message.length > MAX_MESSAGE_LENGTH) {
+		return 'Your message is too long.';
+	}
+	if (!EMAIL_PATTERN.test(email)) {
+		return 'Please enter a valid email address.';
+	}
+	if ((message.match(LINK_PATTERN) ?? []).length > MAX_LINKS) {
+		return 'Please include fewer links in your message.';
+	}
+	return null;
+}
+
+function escapeHtml(value) {
+	return value
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#39;');
+}
+
+function textResponse(body, status) {
+	return new Response(body, {
+		status,
+		headers: { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': ALLOWED_ORIGIN },
 	});
 }
 
@@ -48,12 +95,12 @@ async function sendEmail(name, email, message, env) {
 				To: [
 					{
 						Email: toEmail,
-						Name: name,
+						Name: 'blackcatdev.io',
 					},
 				],
-				Subject: 'New message from your blackcaatdev.io',
+				Subject: 'New message from blackcatdev.io',
 				TextPart: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-				HTMLPart: `<p>Name: ${name}</p><p>Email: ${email}</p><p>${message}</p>`,
+				HTMLPart: `<p>Name: ${escapeHtml(name)}</p><p>Email: ${escapeHtml(email)}</p><p>${escapeHtml(message).replaceAll('\n', '<br>')}</p>`,
 			},
 		],
 	};
