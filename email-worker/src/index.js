@@ -116,3 +116,7 @@ async function sendEmail(name, email, message, env) {
 
 	return response;
 }
+
+function log(message) {
+	console.log(message);
+}
