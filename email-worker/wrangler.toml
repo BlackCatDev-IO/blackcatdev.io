@@ -1,0 +1,9 @@
+name = "email-worker"
+main = "src/index.js"
+compatibility_date = "2026-10-05"
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "email.blackcatdev.io", custom_domain = true }]
+
+[observability]
+enabled = true
