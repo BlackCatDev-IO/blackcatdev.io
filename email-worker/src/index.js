@@ -14,37 +14,76 @@ export default {
 };
 
 async function handleRequest(request, env) {
+	const log = (outcome, details = {}) => logRequest(request, outcome, details);
+
 	if (request.method !== 'POST') {
+		log('method_not_allowed');
 		return textResponse('Method Not Allowed', 405);
 	}
 
 	if (request.headers.get('Origin') !== ALLOWED_ORIGIN) {
+		log('forbidden_origin');
 		return textResponse('Forbidden', 403);
 	}
 
-	const formData = await request.formData();
+	let formData;
+	try {
+		formData = await request.formData();
+	} catch {
+		log('bad_body', { contentType: request.headers.get('Content-Type') });
+		return textResponse('Bad Request', 400);
+	}
 
 	// Honeypot: hidden from people, filled in by bots. Pretend it worked so they don't adapt.
 	if (formData.get('website')) {
+		log('honeypot', { email: formData.get('email') });
 		return textResponse('Thank you for your message!', 200);
 	}
 
 	const name = (formData.get('name') ?? '').toString().trim();
 	const email = (formData.get('email') ?? '').toString().trim();
 	const message = (formData.get('message') ?? '').toString().trim();
+	const submission = {
+		email,
+		hasHoneypotField: formData.has('website'),
+		messageLength: message.length,
+		linkCount: (message.match(LINK_PATTERN) ?? []).length,
+	};
 
 	const validationError = validate(name, email, message);
 	if (validationError) {
+		log('invalid', { ...submission, reason: validationError });
 		return textResponse(validationError, 400);
 	}
 
 	const sendEmailResponse = await sendEmail(name, email, message, env);
 
 	if (!sendEmailResponse.ok) {
+		log('send_failed', { ...submission, mailjetStatus: sendEmailResponse.status });
 		return textResponse('Failed to send message.', 500);
 	}
 
+	log('sent', submission);
 	return textResponse('Thank you for your message!', 200);
+}
+
+// One structured line per request, so Workers Logs can tell real form submissions
+// (browser user agent, blackcatdev.io referer) apart from scripts hitting the endpoint directly.
+function logRequest(request, outcome, details) {
+	console.log(
+		JSON.stringify({
+			outcome,
+			method: request.method,
+			origin: request.headers.get('Origin'),
+			referer: request.headers.get('Referer'),
+			userAgent: request.headers.get('User-Agent'),
+			ip: request.headers.get('CF-Connecting-IP'),
+			country: request.cf?.country,
+			asn: request.cf?.asn,
+			asOrganization: request.cf?.asOrganization,
+			...details,
+		}),
+	);
 }
 
 function validate(name, email, message) {
